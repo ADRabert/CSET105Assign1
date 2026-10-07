@@ -37,8 +37,8 @@ do {
             if ((score -= 5) < 0) score = 0;
             console.log(`Incorrect. -5 points. Score:`, score);
         }
-        if (--lives === 0) break;
-        else console.log(lives, `chance(s) remaining.`);
+        if (lives > 0) console.log(--lives, `chance(s) remaining.`);
+        if (lives === 0) break;
     }
     console.log(`\nTest finished. Final score:`, score);
 } while (true);
