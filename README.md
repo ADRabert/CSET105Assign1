@@ -5,9 +5,9 @@ The goal of this assignment is to create a game that tests the user's mathematic
 
 2 modes are presented; a max score mode and three-out mode, with 20 questions each. 3 difficulties are given; Easy, Medium & Hard.
 
-On max score mode, the user attempts to answer all 20 questions correctly to achieve the highest score.
+On max score mode, the user attempts to answer all 20 questions correctly to achieve the highest score. There should also be an option to skip a question without losing any points.
 
-On three-out mode, the user has 3 chances to answer all 20 questions correctly. If the user gets 3 answers wrong, the test ends prematurely.
+On three-out mode, the user has 3 chances to answer all 20 questions correctly. If the user gets 3 answers wrong, the test ends prematurely. Skipping is not allowed in this mode.
 
 On Easy difficulty, there are only addition & subtraction questions, each with 1 digit numbers for both the first & second number.
 
