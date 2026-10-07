@@ -14,7 +14,6 @@ do {
     }
     let score = 0;
     if (opt === 2) var lives = 3;
-    else var lives = -1;
     for (let questionNum = 1; questionNum <= 20; questionNum++) {
         do {
             if (difficulty === 1) var operator = Math.floor(Math.random() * 2);
@@ -31,14 +30,15 @@ do {
         if (answer === correct) {
             console.log(`Correct! +10 points. Score:`, score += 10);
             continue;
-        }
-        else if (isNaN(answer)) console.log(`Skipped.`)
+        } else if (isNaN(answer)) console.log(`Skipped.`)
         else {
             if ((score -= 5) < 0) score = 0;
             console.log(`Incorrect. -5 points. Score:`, score);
         }
-        if (lives > 0) console.log(--lives, `chance(s) remaining.`);
-        if (lives === 0) break;
+        if (opt === 2) {
+            if (--lives === 0) break;
+            else console.log(lives, `chance(s) remaining.`);
+        }
     }
     console.log(`\nTest finished. Final score:`, score);
 } while (true);
