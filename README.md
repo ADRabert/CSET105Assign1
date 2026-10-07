@@ -15,6 +15,8 @@ On Medium difficulty, there are addition, subtraction, multiplication, division 
 
 On Hard difficulty, there are addition, subtraction, multiplication, division & modulus questions. For addition & subtraction, 3 digit numbers are possible for both numbers. For the rest, the first number can be 2 digits, while the second must be 1 digit.
 
+All operators & numbers for questions must be randomly generated.
+
 Dividing or modulating by zero is unacceptable.
 
 The program ends when the user finishes either mode with any outcome, or quits the program manually.
